@@ -1,8 +1,8 @@
-package com.example.android.nokotlin;
+package com.example.android.nokotlin
 
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.os.Bundle;
+import android.os.Bundle
+import android.view.View
+import androidx.appcompat.app.AppCompatActivity
 
 /**
  * Создать новый проект в Android Studio без поддержки Kotlin.
@@ -17,12 +17,11 @@ import android.os.Bundle;
  * Изучить API базы данных с фильмами и зарегистрироваться в качестве разработчика, получить свой ключ разработчика.
  * Определиться с экранами и функционалом вашего будущего приложения с фильмами на основе возможностей API.
  */
-
-public class MainActivity extends AppCompatActivity {
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+class MainActivity : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
     }
+
+    fun btn1(view: View) {}
 }
